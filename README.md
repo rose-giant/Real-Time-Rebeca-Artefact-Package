@@ -10,7 +10,6 @@ Java. Direct execution using Java is also supported.
 
 artifact/
 ├── Dockerfile
-├── ssgen-3.1.jar          # State space generator executable
 ├── examples/                     # Example Rebeca models used in the paper
 │   └── motivatingexample.rebeca
 ├── README.md
@@ -37,24 +36,10 @@ directory on the host machine.
 
 Notice. replace motivatingexample with each of the test cases to check their outputs. 
 
-## Option B: Java (Alternative)
-
-### Requirements
-- Java 17 or later
-- Tested on Linux and Windows
-
-### Usage
-
-java -jar ssgen-3.1.jar <model> <min> <max>
-
 #### Arguments
 - model: path to a Rebeca model
 - min: lower bound for state-space exploration
 - max: upper bound for state-space exploration
-
-### Example
-
-java -jar ssgen-3.1.jar examples/motivatingexample.rebeca 0 300
 
 ## Expected Outcome
 
